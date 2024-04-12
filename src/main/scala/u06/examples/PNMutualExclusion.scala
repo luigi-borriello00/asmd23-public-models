@@ -3,6 +3,7 @@ package u06.examples
 export u06.modelling.PetriNet
 import u06.utils.MSet
 
+
 object PNMutualExclusion:
 
   enum Place:
@@ -19,6 +20,7 @@ object PNMutualExclusion:
     MSet(T) ~~> MSet(C) ^^^ MSet(C),
     MSet(C) ~~> MSet()
   ).toSystem
+
 
 @main def mainPNMutualExclusion =
   import PNMutualExclusion.*
