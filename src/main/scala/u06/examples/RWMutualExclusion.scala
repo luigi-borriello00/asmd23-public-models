@@ -1,7 +1,7 @@
 package pc.examples
 
-export pc.modelling.PetriNet
-import pc.utils.MSet
+export u06.modelling.PetriNet
+import u06.utils.MSet
 
 object RWMutualExclusion:
 
@@ -9,9 +9,9 @@ object RWMutualExclusion:
     case START, CHOICE, WANT_READING, WANT_WRITE, JOLLY, READING, WRITING
 
   export Place.*
-  export pc.modelling.PetriNet.*
-  export pc.modelling.SystemAnalysis.*
-  export pc.utils.MSet
+  export u06.modelling.PetriNet.*
+  export u06.modelling.SystemAnalysis.*
+  export u06.utils.MSet
 
   // DSL-like specification of a Petri Net
   def readersAndWritersPetriNet = PetriNet[Place](
